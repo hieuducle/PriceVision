@@ -106,7 +106,9 @@ if __name__ == '__main__':
             break
 
         frame = cv2.resize(frame, (1200, 800))
-        frame = cv2.rotate(frame,cv2.ROTATE_180)
+        # frame = cv2.rotate(frame,cv2.ROTATE_180)
+        frame = cv2.flip(frame, -1)
+
 
         result = detect.track(frame, persist=True)
 
