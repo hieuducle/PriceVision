@@ -1,4 +1,4 @@
-# [PYTORCH] Classify items, automatically calculate product prices
+# [PYTORCH] Build product classification model, automatically calculate product price
 <p align="center">
  <h1 align="center">PriceVision</h1>
 </p>
