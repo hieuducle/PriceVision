@@ -7,11 +7,19 @@
 This is a project for automatically determining the price of each object.
 * Determine the product name, price and quantity of each product, calculate the total product amount.
 ## Descriptions
-* Building a product classification model with Resnet as backbone
-* Use YOLO to detect the position of each item, then pass each item into a classification model to determine its label, and access a JSON file to retrieve the product price.
+* Collected custom dataset by recording individual product videos, then extracted frames for training.
+
+* Trained a ResNet50-based classification model using PyTorch for identifying product types.
+
+* Used YOLOv8 for object detection to locate products in video frames and passed bounding boxes through the classifier.
+
+* Matched product names with corresponding prices stored in a JSON file to automatically display prices.
+
+* Implemented calculation of total cost and product count.
+</br>
 <p align="center">
   <img src="demo/output.gif" width=600><br/>
-  <i>Camera app demo</i>
+  <i>Demo</i>
 </p>
 
 
