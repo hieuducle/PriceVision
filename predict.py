@@ -93,9 +93,9 @@ if __name__ == '__main__':
     tracked_objects = {}
     iou_threshold = 0.35
 
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    fps = cap.get(cv2.CAP_PROP_FPS)
-    out = cv2.VideoWriter(args.out_video, fourcc, fps, (1200, 800))
+    # fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    # fps = cap.get(cv2.CAP_PROP_FPS)
+    # out = cv2.VideoWriter(args.out_video, fourcc, fps, (1200, 800))
 
     item_count = {}
     max_box_area = 0.7 * 1200 * 800
@@ -175,10 +175,10 @@ if __name__ == '__main__':
             y_offset -= 50
         cv2.putText(frame, "Total: {}".format(total_price), (10,50),
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-        out.write(frame)
-        # cv2.imshow("a",frame)
-        #
-        # cv2.waitKey(25)
+        # out.write(frame)
+        cv2.imshow("a",frame)
+
+        cv2.waitKey(25)
     cap.release()
-    out.release()
+    # out.release()
     cv2.destroyAllWindows()

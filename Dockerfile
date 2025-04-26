@@ -5,5 +5,6 @@ RUN yum install -y libglvnd-glx
 
 WORKDIR /PriVision
 COPY . /PriVision
+
 CMD ["python", "predict.py"]
 

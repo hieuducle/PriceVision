@@ -10,7 +10,7 @@ class ItemDataset(Dataset):
         self.labels = []
         self.images_path = []
         self.transform = transform
-        root = "/home/amin/PycharmProjects/PythonProject/PriceVision/data/train"
+        root = "/home/amin/PycharmProjects/PythonProject/PriceVision/data/all_images"
         self.categories = ["coca","mentos","milk_box","nutifood","TH_water"]
         for idx,cls_folder in enumerate(self.categories):
             cls_folder_path = os.path.join(root,cls_folder)
