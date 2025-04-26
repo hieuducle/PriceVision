@@ -18,7 +18,7 @@ This is a project for automatically determining the price of each object.
 * Implemented calculation of total cost and product count.
 </br>
 <p align="center">
-  <img src="demo/output.gif" width=600><br/>
+  <img src="demo/demo.gif" width=600><br/>
   <i>Demo</i>
 </p>
 
